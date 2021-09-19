@@ -64,7 +64,7 @@
 					</tr>
 					@endforeach
 				</tbody>
-			</table>				
+			</table>
 		</div>
 		<div class="span2"></div>
 	</div>

@@ -22,30 +22,54 @@
 		<div id="columnchart_values" class="span12">
 			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 			<script type="text/javascript">
-				google.charts.load("current", {packages:['corechart']});
+				google.charts.load("current", {
+					packages: ['corechart']
+				});
 				google.charts.setOnLoadCallback(drawChart);
+
 				function drawChart() {
 					var data = google.visualization.arrayToDataTable([
-						["Element", "Density", { role: "style" } ],
-						["Today",{{$dayR}}, "#b87333"],
-						["Month", {{$MonthR}}, "silver"],
-						["Year", {{$YearR}}, "gold"]
-						]);
+						["Element", "Density", {
+							role: "style"
+						}],
+						["Today", {
+							{
+								$dayR
+							}
+						}, "#b87333"],
+						["Month", {
+							{
+								$MonthR
+							}
+						}, "silver"],
+						["Year", {
+							{
+								$YearR
+							}
+						}, "gold"]
+					]);
 
 					var view = new google.visualization.DataView(data);
 					view.setColumns([0, 1,
-						{ calc: "stringify",
-						sourceColumn: 1,
-						type: "string",
-						role: "annotation" },
-						2]);
+						{
+							calc: "stringify",
+							sourceColumn: 1,
+							type: "string",
+							role: "annotation"
+						},
+						2
+					]);
 
 					var options = {
 						title: "Chart for Your Transactions by Your Currency",
 						width: 600,
 						height: 400,
-						bar: {groupWidth: "95%"},
-						legend: { position: "none" },
+						bar: {
+							groupWidth: "95%"
+						},
+						legend: {
+							position: "none"
+						},
 					};
 					var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
 					chart.draw(view, options);

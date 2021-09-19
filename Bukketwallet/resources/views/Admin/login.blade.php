@@ -49,7 +49,7 @@
                             @endforeach
                         </ul>
                     </div>
-                    @endif    
+                    @endif
                     <div class="form-group">
                         <input class="form-control form-control-lg" id="username" type="email" name="email" placeholder="Email" autocomplete="off">
                     </div>

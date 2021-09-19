@@ -14,14 +14,14 @@
         <div class="form">
             <p>
                 <label>
-                    Email<br/>
+                    Email<br />
                     <input type="text" tabindex="10" size="60" value="" name="email" class="input-text" required="required" />
                 </label>
             </p>
 
             <p>
                 <label>
-                    Password<br/>
+                    Password<br />
                     <input type="password" tabindex="20" size="60" value="" name="pwd" class="input-text" required="required" />
                 </label>
             </p>
@@ -106,11 +106,12 @@
 </div>
 
 <script type="text/javascript">
-    jQuery(document).ready(function($){
+    jQuery(document).ready(function($) {
         $('#slider-polaroid-0').polaroid({
             animation: '',
             pause: 8000,
-            animationSpeed: 800             });
+            animationSpeed: 800
+        });
     });
 </script>
 
@@ -144,143 +145,146 @@
                                 <ul class="logos-slides">
 
                                     <li style="height: 70px;">
-                                        <a href="#" class="bwWrapper" >
+                                        <a href="#" class="bwWrapper">
                                             <img src="style/images/slider/ugodno1.png" style="max-height: 70px;" class="logo" />
                                         </a>
                                     </li>
 
                                     <li style="height: 70px;">
-                                        <a href="#" class="bwWrapper" >
+                                        <a href="#" class="bwWrapper">
                                             <img src="style/images/slider/Tutti_1_01.png" style="max-height: 70px;" class="logo" />
                                         </a>
                                     </li>
 
                                     <li style="height: 70px;">
-                                        <a href="#" class="bwWrapper" >
+                                        <a href="#" class="bwWrapper">
                                             <img src="style/images/slider/tiecafe-011.png" style="max-height: 70px;" class="logo" />
                                         </a>
                                     </li>
 
                                     <li style="height: 70px;">
-                                        <a href="#" class="bwWrapper" >
+                                        <a href="#" class="bwWrapper">
                                             <img src="style/images/slider/Senza-titolo-1.png" style="max-height: 70px;" class="logo" />
                                         </a>
                                     </li>
 
                                     <li style="height: 70px;">
-                                        <a href="#" class="bwWrapper" >
+                                        <a href="#" class="bwWrapper">
                                             <img src="style/images/slider/nolt_400x4001.png" style="max-height: 70px;" class="logo" />
                                         </a>
                                     </li>
 
                                     <li style="height: 70px;">
-                                        <a href="#" class="bwWrapper" >
+                                        <a href="#" class="bwWrapper">
                                             <img src="style/images/slider/muffinstudio-011.png" style="max-height: 70px;" class="logo" />
                                         </a>
                                     </li>
 
                                     <li style="height: 70px;">
-                                        <a href="#" class="bwWrapper" >
+                                        <a href="#" class="bwWrapper">
                                             <img src="style/images/slider/logo-mix-1.png" style="max-height: 70px;" class="logo" />
                                         </a>
                                     </li>
 
                                     <li style="height: 70px;">
-                                        <a href="#" class="bwWrapper" >
+                                        <a href="#" class="bwWrapper">
                                             <img src="style/images/slider/ken.png" style="max-height: 70px;" class="logo" />
                                         </a>
                                     </li>
 
                                     <li style="height: 70px;">
-                                        <a href="#" class="bwWrapper" >
+                                        <a href="#" class="bwWrapper">
                                             <img src="style/images/slider/icecreammedia-011.png" style="max-height: 70px;" class="logo" />
                                         </a>
                                     </li>
 
                                     <li style="height: 70px;">
-                                        <a href="#" class="bwWrapper" >
+                                        <a href="#" class="bwWrapper">
                                             <img src="style/images/slider/garnise_011.png" style="max-height: 70px;" class="logo" />
                                         </a>
                                     </li>
 
                                     <li style="height: 70px;">
-                                        <a href="#" class="bwWrapper" >
+                                        <a href="#" class="bwWrapper">
                                             <img src="style/images/slider/capitan-cook1.png" style="max-height: 70px;" class="logo" />
                                         </a>
                                     </li>
 
                                     <li style="height: 70px;">
-                                        <a href="#" class="bwWrapper" >
-                                           <img src="style/images/slider/bread1.png" style="max-height: 70px;" class="logo" />
-                                       </a>
-                                   </li>
+                                        <a href="#" class="bwWrapper">
+                                            <img src="style/images/slider/bread1.png" style="max-height: 70px;" class="logo" />
+                                        </a>
+                                    </li>
 
-                                   <li style="height: 70px;">
-                                    <a href="#" class="bwWrapper" >
-                                        <img src="style/images/slider/Apuragreen2.png" style="max-height: 70px;" class="logo" />
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="nav">
-                            <a class="prev" href="#"></a>
-                            <a class="next" href="#"></a>
+                                    <li style="height: 70px;">
+                                        <a href="#" class="bwWrapper">
+                                            <img src="style/images/slider/Apuragreen2.png" style="max-height: 70px;" class="logo" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="nav">
+                                <a class="prev" href="#"></a>
+                                <a class="next" href="#"></a>
+                            </div>
+                            <div class="clear"></div>
                         </div>
                         <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
-                </div>
-                <div class="clear"></div>
 
-                <script type="text/javascript">
-                    jQuery(function($){
+                    <script type="text/javascript">
+                        jQuery(function($) {
 
-                        $('.logos-slides').imagesLoaded(function(){
-                            $('.logos-slides').carouFredSel({
-                                auto: true,
-                                width: '100%',
-                                prev: '.logos-slider .prev',
-                                next: '.logos-slider .next',
-                                swipe: {
-                                    onTouch: true
-                                },
-                                scroll : {
-                                    items     : 1,
-                                    duration  : 500             }
-                                });
-                        });
-
-                        $('.bwWrapper').BlackAndWhite({
-                                    hoverEffect : true, // default true
-                                    // set the path to BnWWorker.js for a superfast implementation
-                                    webworkerPath : false,
-                                    // for the images with a fluid width and height
-                                    responsive:true,
-                                    speed: { //this property could also be just speed: value for both fadeIn and fadeOut
-                                        fadeIn: 200, // 200ms for fadeIn animations
-                                        fadeOut: 300 // 800ms for fadeOut animations
+                            $('.logos-slides').imagesLoaded(function() {
+                                $('.logos-slides').carouFredSel({
+                                    auto: true,
+                                    width: '100%',
+                                    prev: '.logos-slider .prev',
+                                    next: '.logos-slider .next',
+                                    swipe: {
+                                        onTouch: true
+                                    },
+                                    scroll: {
+                                        items: 1,
+                                        duration: 500
                                     }
                                 });
+                            });
 
-                        $("a.bwWrapper[href='#']").click(function(){ return false })
+                            $('.bwWrapper').BlackAndWhite({
+                                hoverEffect: true, // default true
+                                // set the path to BnWWorker.js for a superfast implementation
+                                webworkerPath: false,
+                                // for the images with a fluid width and height
+                                responsive: true,
+                                speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+                                    fadeIn: 200, // 200ms for fadeIn animations
+                                    fadeOut: 300 // 800ms for fadeOut animations
+                                }
+                            });
 
-                    });
-                </script>
+                            $("a.bwWrapper[href='#']").click(function() {
+                                return false
+                            })
+
+                        });
+                    </script>
 
 
+                </div>
+                <!-- START COMMENTS -->
+                <div id="comments"></div>
+                <!-- END COMMENTS -->
             </div>
-            <!-- START COMMENTS -->
-            <div id="comments"></div>
-            <!-- END COMMENTS -->
+            <!-- END CONTENT -->
+
+            <!-- START EXTRA CONTENT -->
+            <!-- END EXTRA CONTENT -->
+
         </div>
-        <!-- END CONTENT -->
-
-        <!-- START EXTRA CONTENT -->
-        <!-- END EXTRA CONTENT -->
-
     </div>
-</div>
 </div>
 <!-- END PRIMARY -->
 @endsection

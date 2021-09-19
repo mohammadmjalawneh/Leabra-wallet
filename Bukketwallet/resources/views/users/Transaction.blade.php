@@ -20,31 +20,31 @@
 @endsection
 @section('main')
 <style type="text/css">
-	textarea{
+	textarea {
 		resize: none;
-	}	
+	}
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#bigcate').change(function() {
 			$.ajax({
-				url: '/Transaction/'+$(this).val(),
-				type: 'GET',
-				success:function (data) {
-					$('#subcate').html(data);
-				}
-			})
-			.done(function() {
-				console.log("success");
-			})
-			.fail(function() {
-				console.log("error");
-			})
-			.always(function() {
-				console.log("complete");
-			});
-			
+					url: '/Transaction/' + $(this).val(),
+					type: 'GET',
+					success: function(data) {
+						$('#subcate').html(data);
+					}
+				})
+				.done(function() {
+					console.log("success");
+				})
+				.fail(function() {
+					console.log("error");
+				})
+				.always(function() {
+					console.log("complete");
+				});
+
 		});
 	});
 </script>
@@ -83,7 +83,7 @@
 				<div class="control-group">
 					<lable class="control-label" for='amount'>Transaction Amount</lable>
 					<div class="controls">
-						<input type="number" name="amount" id="amount" class="input-xlarge"  step="any" placeholder="22.33"  required="required">
+						<input type="number" name="amount" id="amount" class="input-xlarge" step="any" placeholder="22.33" required="required">
 					</div>
 				</div>
 				<div class="control-group">

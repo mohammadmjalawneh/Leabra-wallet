@@ -10,14 +10,14 @@
 		<div class="form">
 			<p>
 				<label>
-					Email<br/>
+					Email<br />
 					<input type="text" tabindex="10" size="60" value="" name="email" class="input-text" required="required" />
 				</label>
 			</p>
 
 			<p>
 				<label>
-					Password<br/>
+					Password<br />
 					<input type="password" tabindex="20" size="60" value="" name="pwd" class="input-text" required="required" />
 				</label>
 			</p>
@@ -129,7 +129,7 @@
 
 				<div class="form-actions">
 					<button type="submit" name="submit" class="btn btn-primary">Submite Information</button>
-					<button type="button"  class="btn">Cancel</button>
+					<button type="button" class="btn">Cancel</button>
 				</div>
 
 			</form>
