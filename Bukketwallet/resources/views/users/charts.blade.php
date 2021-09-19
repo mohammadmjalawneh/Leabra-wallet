@@ -28,26 +28,21 @@
 				google.charts.setOnLoadCallback(drawChart);
 
 				function drawChart() {
-					var data = google.visualization.arrayToDataTable([
-						["Element", "Density", {
-							role: "style"
-						}],
-						["Today", {
-							{
+					var data =
+						google.visualization.arrayToDataTable([
+							["Element", "Density", {
+								role: "style"
+							}],
+							["Today", {
 								$dayR
-							}
-						}, "#b87333"],
-						["Month", {
-							{
+							}, "#b87333"],
+							["Month", {
 								$MonthR
-							}
-						}, "silver"],
-						["Year", {
-							{
+							}, "silver"],
+							["Year", {
 								$YearR
-							}
-						}, "gold"]
-					]);
+							}, "gold"]
+						]);
 
 					var view = new google.visualization.DataView(data);
 					view.setColumns([0, 1,
