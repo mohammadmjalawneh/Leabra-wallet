@@ -38,7 +38,7 @@
 		<div class="span3"></div>
 		<div id="table2" class="span6">
 			<img id="personal" src="{{url('/uploads/Users/'.$user['0']['img'])}}">
-			<table style="">
+			<table>
 				<tr>
 					<td colspan="2"></td>
 				</tr>
@@ -63,7 +63,7 @@
 						<h3>Your Balance</h3>
 					</td>
 					<td>
-						<h3 style="">{{" ".$user['0']['balance']}}</h3>
+						<h3>{{" ".$user['0']['balance']}}</h3>
 					</td>
 				</tr>
 				<tr>
