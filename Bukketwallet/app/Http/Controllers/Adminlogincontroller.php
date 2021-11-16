@@ -13,8 +13,8 @@ class Adminlogincontroller extends Controller
     }
     function checklogin(Request $request)
     {
-        $Admin=new Admin();
-        $result=$Admin->where('email', '=', $request->email)->where('password', '=', $request->password)->get();
+        $Admin = new Admin();
+        $result = $Admin->where('email', '=', $request->email)->where('password', '=', $request->password)->get();
         if (!empty($result[0]->admin_id)) {
             session(['admin_id' => $result[0]->admin_id]);
             return redirect('Admin/index');

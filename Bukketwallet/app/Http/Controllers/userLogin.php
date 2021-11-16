@@ -10,9 +10,9 @@ class userLogin extends Controller
     public function index(Request $request)
     {
         if (!empty(session('user_id'))) {
-            $user=new Usertable();
-            $result=$user->where('user_id', '=', session('user_id'))->get();
-            return view('users/usersindex', ['user'=>$result]);
+            $user = new Usertable();
+            $result = $user->where('user_id', '=', session('user_id'))->get();
+            return view('users/usersindex', ['user' => $result]);
         } else {
             return view('index');
         }
@@ -20,9 +20,9 @@ class userLogin extends Controller
     public function index2(Request $request)
     {
         if (!empty(session('user_id'))) {
-            $user=new Usertable();
-            $result=$user->where('user_id', '=', session('user_id'))->get();
-            return view('users/AddSubcategory', ['user'=>$result]);
+            $user = new Usertable();
+            $result = $user->where('user_id', '=', session('user_id'))->get();
+            return view('users/AddSubcategory', ['user' => $result]);
         } else {
             return redirect('/');
         }
